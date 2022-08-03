@@ -4,7 +4,9 @@
 }
 
 body {
-  background: hsl(230, 100%, 99%);
+  background: hsl(230, 100%, 99%) url("images/bg-pattern.svg") no-repeat;
+  background-attachment: fixed;
+  background-position: top;
   font-family: "Manrope", sans-serif;
   display: flex;
   flex-direction: column;
@@ -254,6 +256,7 @@ input:checked + .slider:before {
 @media only screen and (max-width: 600px) {
   body {
     justify-content: flex-start;
+    background-size: 370px 340px;
   }
 
   header {
